@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+
+<body>
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href=
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+  <p class="notes_list_section_title" style="text-decoration: solid; font-size: xx-large;">YOUR RECENT NOTES</p>
+  <section class="notes_list_section">
+    <div class="notes_list_wrapper">
+        <h4><button id="add" routerLink="/notesAdd">Add a note<i class="bi bi-plus"></i></button><span class="badge" style="text-align: right;">Total notes: {{notesCount}}</span></h4>
+
+        <ul>
+          <li class="notes_item card" *ngFor="let note of recentNotes;  let i = index">
+            <!-- <a [routerLink]="'/product/detail/' + product.code"> -->
+              <div class="sub_details">
+                  <p style="font-size: large;">{{i+1}}. {{ note.content }}</p>
+                  <br>
+                  <p><span style="font-style: italic;">{{ formatCreatedAt(note.createdAt) }}</span>
+                    <button id="delete" (click)="deleteNoteButtonClicked(note.id)">Delete <i class="bi bi-trash"></i></button>
+                  </p>
+              </div>
+            <!-- </a> -->
+        </li>
+        </ul>
+    </div>
+</section>
+</body>
+
+<app-footer></app-footer>

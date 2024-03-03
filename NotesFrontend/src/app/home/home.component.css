@@ -1,0 +1,35 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  background-image: url('src/assets/pink-2.jpg');
+  background-size: 100% 100%; /* Stretch the image to cover the entire viewport */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 100px solid transparent;
+}
+
+  p{
+    color: black;
+    text-align: center;
+  }
+
+  .container{
+    padding: 50px;
+    text-align: center;
+    font-size: large;
+  }
+
+h2{
+  text-align: center;
+  color: black;
+}
+/* #err{
+  color:red;
+} */
+#view{
+  background-color: rgb(149, 35, 149) !important;
+  color:white;
+  margin-left:42%;
+  border: 2px solid purple;
+}

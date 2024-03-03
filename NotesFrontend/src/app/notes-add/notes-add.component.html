@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+
+<body>
+  <a id="back" routerLink="/notesView">Go Back</a>
+  <br>
+  <div class="container">
+    <form [formGroup]="noteForm" (ngSubmit)="createNote()">
+      <h2>Write Your Note <i class="bi bi-pen"></i></h2>
+      <br>
+      <textarea id="description" formControlName="content" rows="7" placeholder="Write your note in 500 characters..."></textarea>
+      <br>
+      <br>
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-10">
+      <button id="submit" type="submit" [disabled]="noteForm.invalid" class="btn">Add Note</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+<app-footer></app-footer>
+  

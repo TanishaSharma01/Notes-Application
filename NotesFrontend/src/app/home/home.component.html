@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<body>
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <div>
+        <h2>Keep Notes <i class="bi bi-lightbulb-fill"></i></h2>
+        <br>
+        <p style="font-size: large;">Write what's on your mind.
+        <br>Notes Made Simple, Ideas Made Brilliant</p>
+    </div>
+      <div class="container" style="color:black; font-style: bold; font-size: larger;">
+        <div class="row">
+
+          <div class="col-7">
+            <span style="background-color: rgba(240, 248, 255, 0.7); border-radius: 0.4em;">
+              <i class="bi bi-people"></i>
+              Users: {{noOfUser}}
+            </span>
+          </div>
+
+          <div class="col-3">
+            <span style="background-color: rgba(240, 248, 255, 0.7); border-radius: 0.4em;">
+              <i class="bi bi-pen"></i>
+              Notes: {{noOfNotes}}
+            </span>
+          </div>
+
+        </div>
+      </div>
+    <div>
+      <a *ngIf="loggedIn"><button type="button" id="view" class="btn btn btn-lg" routerLink="notesView">View Notes <i class="bi bi-eye-fill"></i></button>&nbsp;&nbsp;</a>
+    </div>
+</body>
+
+<app-footer></app-footer>

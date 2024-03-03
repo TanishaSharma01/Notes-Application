@@ -1,0 +1,39 @@
+nav{
+    background-color: #c76379;
+    width: 100vw;
+    padding: 5px;
+    color:white;
+    height: 60px;
+    border: 2px solid #f97290;
+}
+
+#nav_login {
+    background-color: green !important;
+    color: white;
+    border-radius: 0.4em;
+    border: 2px solid rgb(46, 171, 46);
+  }
+
+#nav_register{
+    background-color: blue !important;
+    color: white;
+    margin-left: 10px;
+    border: 2px solid rgb(96, 96, 255);
+    border-radius: 0.4em;
+    margin-right: 20px;
+}
+
+#nav_logout{
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: red !important;
+    color: white;
+    border-radius: 0.4em;
+    border: 2px solid rgb(255, 75, 75);
+}
+
+h3 {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }

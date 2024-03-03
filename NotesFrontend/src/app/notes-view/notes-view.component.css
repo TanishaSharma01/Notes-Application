@@ -1,0 +1,89 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    background-image: url('src/assets/pink-3.jpg');
+    background-size: 100% 100%; /* Stretch the image to cover the entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 100px solid transparent;
+  }
+
+  .notes_list_section_title{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: solid;
+    color: rgb(67, 67, 67) !important;
+  }
+  h4{
+    margin-left: 33px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(67, 67, 67) !important;
+}
+
+/* Style the main section */
+.notes_list_section {
+  /* background-color: #333; Change to your desired background color */
+  padding: 20px; /* Add padding to the section */
+}
+
+/* Style the wrapper */
+.notes_list_wrapper {
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Style the section title */
+.notes_list_section_title {
+  color: pink;
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Add space below the title */
+}
+
+/* Style the badge */
+.badge {
+  margin-left: 460px;
+  background-color: #003064; /* Change to your desired badge background color */
+  color: white;
+  padding: 3px 6px; /* Adjust padding as needed */
+  border-radius: 4px; /* Add rounded corners to the badge */
+  margin-right: 5px; /* Add space between badges */
+}
+
+/* Style the list item (card) */
+.notes_item {
+  background-color: rgb(255, 241, 244); /* Change to your desired card background color */
+  border: 3px solid pink; /* Add a border */
+  border-radius: 4px; /* Add rounded corners to the card */
+  padding: 10px; /* Add padding inside the card */
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Style the sub-details */
+.sub_details {
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Style the code badge within the list item */
+.code_badge {
+  background-color: #ff5722; /* Change to your desired badge background color */
+  color: white;
+  padding: 3px 6px; /* Adjust padding as needed */
+  border-radius: 4px; /* Add rounded corners to the badge */
+  margin-right: 5px; /* Add space between badges */
+}
+
+#delete{
+  margin-left: 500px;
+  background-color: red !important;
+  color: white;
+  border-radius: 0.4em;
+  border: 2px solid rgb(255, 75, 75);
+}
+
+#add{
+  background-color: green !important;
+  color: white;
+  border-radius: 0.4em;
+  border: 2px solid rgb(0, 169, 0);
+}
